@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Substitute Finder</title>
+    <link rel="stylesheet" href="substitute.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title">Find My Substitute</div>
+    <div class="container">
+      <div class="product-option">
+        <form onsubmit="foodSwapSelect()">
+          <label for="food-select">Select a food you want to swap:</label>
+          <select class="food-select">
+            <optgroup label="Dairy">
+              <option value="velveta-cheese">Velveta Cheese</option>
+              <option value="cream-cheese">Cream Cheese</option>
+              <option value="sour-cream">Sour Cream</option>
+            </optgroup>
+            <optgroup label="Spices">
+              <option value="onion-powder">Onion Powder</option>
+              <option value="herbes-de-provence">Herebes de Provence</option>
+              <option value="cayenne-pepper">Cayenne Pepper</option>
+            </optgroup>
+            <optgroup label="Leafy Greens">
+              <option value="spring-onion">Spring Onion</option>
+              <option value="swiss-chard">Swiss Chard</option>
+              <option value="spinach">Spinach</option>
+            </optgroup>
+          </select>
+        <button class="submit-button" type="submit">Submit</button>
+      </div> 
+      <div id="details"></div>
+    </div>
+    <script src="substitute1.js"></script>
+  </body>
+</html>
